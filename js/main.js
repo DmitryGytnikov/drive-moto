@@ -18,4 +18,16 @@ $(function(){
     $($(this).attr('href')).addClass('tabs-content--active');
   });
 
+  $('.product-item__favorite').on('click', function(){
+    $(this).toggleClass('product-item__favorite--active')
+  });
+
+  $('.product-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="images/arrow-black-left.svg"></button>',
+    nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/arrow-black-right.svg"></button>',
+  });
+
+
 });
