@@ -5,6 +5,14 @@ $(function(){
     dots: true,
     prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/arrow-left.svg"></button>',
     nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/arrow-right.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 969,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
 
@@ -60,6 +68,10 @@ $(function(){
     spacing : "7px",
     normalFill: "#C4C4C4"
   });
+
+  $('.menu__btn').on('click', function(){
+    $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+  })
 
 
 
