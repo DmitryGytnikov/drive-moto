@@ -103,7 +103,7 @@ body {
   transform: translateX(-100%);
   transition: all .3s;
   position: absolute;
-  z-index: 10;
+  z-index: 12;
   background-color: #fff;
 }
 
@@ -529,7 +529,7 @@ body {
 }
 
 .product-item {
-  min-height: 400px;
+  min-height: 407px;
 	border: 1px solid #CDCDCD;
   border-radius: 3px;
   text-align: center;
